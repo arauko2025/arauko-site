@@ -1,0 +1,352 @@
+/index.html
+/gracias.html
+/robots.txt
+/sitemap.xml
+/_headers
+/servicios/index.html
+/casos/index.html
+/contacto/index.html
+/assets/news.json
+/assets/logo-arauko.png  (subilo cuando lo tengas) 
+/assets/isologo.png      (subilo cuando lo tengas)
+
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARAUKO — Consultoría HVAC & Smart Building</title>
+<meta name="description" content="Consultoría e ingeniería para instalaciones HVAC, BMS/IoT, BIM/REVIT, energías renovables y descarbonización (LEED).">
+<link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/assets/isologo.png">
+<meta property="og:title" content="ARAUKO — Consultoría HVAC & Smart Building">
+<meta property="og:description" content="Consultoría integral: HVAC, BMS/IoT, BIM/REVIT, LEED y energías renovables.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://arauko.com">
+<meta property="og:image" content="https://arauko.com/assets/logo-arauko.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  html{scroll-behavior:smooth} .section{scroll-margin-top:94px}
+  .hero-slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease;background-size:cover;background-position:center}
+  .hero-slide.active{opacity:1}
+</style>
+</head>
+<body class="font-sans text-slate-900 bg-white">
+<header class="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 md:py-3 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-3">
+      <img src="/assets/isologo.png" alt="ARAUKO" class="h-10 md:h-12 w-auto object-contain">
+      <div class="hidden lg:block leading-tight">
+        <div class="font-bold text-slate-900 tracking-wide text-xl">ARAUKO</div>
+        <div class="text-[12px] text-slate-600">HVAC 4.0 & Smart Building Solutions</div>
+      </div>
+    </a>
+    <button id="burger" class="md:hidden h-10 w-10 rounded-lg border border-slate-300" aria-label="Abrir menú">☰</button>
+    <div id="menu" class="hidden md:flex items-center gap-6">
+      <a href="/#empresa" class="text-slate-700 hover:text-slate-900 text-sm font-medium">Nuestra Empresa</a>
+      <a href="/servicios/" class="text-slate-700 hover:text-slate-900 text-sm font-medium">Servicios</a>
+      <a href="/casos/" class="text-slate-700 hover:text-slate-900 text-sm font-medium">Casos de Éxito</a>
+      <a href="/contacto/" class="inline-flex items-center gap-2 rounded-full border border-emerald-300 bg-gradient-to-r from-sky-100 via-emerald-100 to-amber-100 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:shadow">Contacto</a>
+    </div>
+  </nav>
+  <div id="drawer" class="md:hidden hidden border-t border-slate-200 bg-white px-4 py-3">
+    <div class="flex flex-col gap-3">
+      <a href="/#empresa" class="py-1">Nuestra Empresa</a>
+      <a href="/servicios/" class="py-1">Servicios</a>
+      <a href="/casos/" class="py-1">Casos de Éxito</a>
+      <a href="/contacto/" class="py-1 font-semibold">Contacto</a>
+    </div>
+  </div>
+</header>
+
+<main class="pt-28 md:pt-24">
+  <section class="relative overflow-hidden">
+    <div class="relative h-[58vh] md:h-[72vh] mx-0 md:mx-8 rounded-none md:rounded-[2rem]">
+      <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=1600&auto=format&fit=crop');"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1563729784474-d77dbb933a9a?q=80&w=1600&auto=format&fit=crop');"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1600&auto=format&fit=crop');"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1581091215367-59ab6be3dda3?q=80&w=1600&auto=format&fit=crop');"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop');"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop');"></div>
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="absolute inset-0 flex items-center">
+        <div class="max-w-7xl mx-auto w-full px-6">
+          <div class="max-w-2xl text-white">
+            <h1 class="text-3xl md:text-5xl font-extrabold">Consultoría & Ingeniería HVAC</h1>
+            <p class="mt-4 text-lg md:text-xl text-slate-200">Instalaciones termomecánicas, BMS/IoT, BIM/REVIT, renovables y LEED para edificios comerciales.</p>
+            <div class="flex flex-wrap gap-3 pt-6">
+              <a href="/servicios/" class="inline-flex items-center gap-2 rounded-xl px-5 py-3 bg-white text-slate-900 shadow hover:shadow-md">Ver servicios</a>
+              <a href="/casos/" class="inline-flex items-center gap-2 rounded-xl px-5 py-3 border border-white/70 bg-transparent text-white hover:bg-white/10">Casos de éxito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section py-16 bg-gradient-to-b from-white to-slate-50" id="empresa">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop" class="rounded-2xl shadow object-cover h-80 w-full" alt="Equipo ARAUKO">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-extrabold">Nuestra Empresa</h2>
+        <p class="mt-3 text-slate-700">Acompañamos a compañías del sector comercial, retail e industrial en el ciclo completo de sus instalaciones HVAC: diseño, licitación, dirección, puesta en marcha y operación.</p>
+        <ul class="mt-4 space-y-2 text-slate-700 list-disc ml-6">
+          <li>Ingeniería aplicada con foco en eficiencia y calidad de aire.</li>
+          <li>Integración BMS/IoT para monitoreo y mantenimiento predictivo.</li>
+          <li>BIM/REVIT para coordinación, cómputos y prefabricación.</li>
+          <li>Descarbonización y certificaciones LEED.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-slate-200 bg-white">
+  <div class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <img src="/assets/isologo.png" alt="ARAUKO logo" class="h-9 w-auto object-contain">
+      <div class="hidden md:block text-sm"><div class="font-semibold">ARAUKO</div>HVAC 4.0 &amp; Smart Building Solutions</div>
+    </div>
+    <div id="cpy" class="text-sm text-slate-600"></div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5491144752218" target="_blank" class="fixed bottom-5 right-5 z-40 inline-flex items-center justify-center h-14 w-14 rounded-full shadow-lg bg-emerald-500 hover:bg-emerald-600 text-white" aria-label="WhatsApp">✉️</a>
+
+<script>
+  document.getElementById('cpy').textContent='© '+new Date().getFullYear()+' ARAUKO. Todos los derechos reservados.';
+  const b=document.getElementById('burger'), d=document.getElementById('drawer');
+  b&&b.addEventListener('click',()=>d.classList.toggle('hidden'));
+  d&&d.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>d.classList.add('hidden')));
+  const slides=[...document.querySelectorAll('.hero-slide')];
+  let i=0; setInterval(()=>{slides[i].classList.remove('active'); i=(i+1)%slides.length; slides[i].classList.add('active')}, 4500);
+</script>
+</body></html>
+
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servicios — ARAUKO</title>
+<meta name="description" content="Servicios de consultoría HVAC, BMS/IoT, energías renovables, descarbonización/LEED y BIM MEP.">
+<link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/assets/isologo.png">
+<meta property="og:title" content="Servicios — ARAUKO">
+<meta property="og:description" content="Consultoría especializada para instalaciones HVAC y Smart Buildings.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://arauko.com/servicios/">
+<meta property="og:image" content="https://arauko.com/assets/logo-arauko.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>html{scroll-behavior:smooth}.section{scroll-margin-top:94px}.subnav a{white-space:nowrap}</style>
+</head><body class="font-sans text-slate-900 bg-white">
+<header class="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 md:py-3 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-3"><img src="/assets/isologo.png" class="h-10 md:h-12" alt="ARAUKO"><div class="hidden lg:block leading-tight"><div class="font-bold text-slate-900 tracking-wide text-xl">ARAUKO</div><div class="text-[12px] text-slate-600">HVAC 4.0 & Smart Building Solutions</div></div></a>
+    <button id="burger" class="md:hidden h-10 w-10 rounded-lg border border-slate-300" aria-label="Abrir menú">☰</button>
+    <div id="menu" class="hidden md:flex items-center gap-6">
+      <a href="/#empresa" class="text-sm">Nuestra Empresa</a><a href="/servicios/" class="text-sm">Servicios</a><a href="/casos/" class="text-sm">Casos de Éxito</a>
+      <a href="/contacto/" class="inline-flex items-center gap-2 rounded-full border border-emerald-300 bg-gradient-to-r from-sky-100 via-emerald-100 to-amber-100 px-4 py-2 text-sm font-semibold">Contacto</a>
+    </div>
+  </nav><div id="drawer" class="md:hidden hidden border-t border-slate-200 bg-white px-4 py-3"><div class="flex flex-col gap-3"><a href="/#empresa">Nuestra Empresa</a><a href="/servicios/">Servicios</a><a href="/casos/">Casos de Éxito</a><a href="/contacto/" class="font-semibold">Contacto</a></div></div>
+</header>
+
+<main class="pt-28 md:pt-24">
+<section class="section py-12">
+  <div class="max-w-7xl mx-auto px-6 text-center"><h1 class="text-3xl md:text-4xl font-extrabold">Servicios</h1><p class="text-slate-700 mt-3">Consultoría especializada para instalaciones HVAC y Smart Buildings.</p></div>
+  <div class="subnav sticky top-20 z-30 bg-white/90 backdrop-blur rounded-xl border border-slate-200 p-2 flex flex-wrap gap-2 justify-center mt-8 mb-10">
+    <a href="#hvac" class="px-3 py-2 rounded-lg border">HVAC</a>
+    <a href="#bms" class="px-3 py-2 rounded-lg border">BMS / IoT</a>
+    <a href="#energia" class="px-3 py-2 rounded-lg border">Energía & Renovables</a>
+    <a href="#leed" class="px-3 py-2 rounded-lg border">Descarbonización & LEED</a>
+    <a href="#bim" class="px-3 py-2 rounded-lg border">BIM MEP</a>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 space-y-16">
+    <div id="hvac" class="grid lg:grid-cols-2 gap-8 items-center">
+      <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9a?q=80&w=1600&auto=format&fit=crop" class="rounded-2xl shadow object-cover h-80 w-full" alt="Instalaciones HVAC">
+      <div><h2 class="text-2xl font-bold">HVAC</h2><p class="mt-2 text-slate-700">Cálculo de cargas, selección de equipos, diseño de ductos y plenos, QA/QC, puesta en marcha y documentación as-built.</p>
+        <ul class="mt-3 list-disc ml-6 text-slate-700"><li>VRF y 1:1, ventilación, extracción, filtrado y IAQ.</li><li>Dirección y supervisión de obra termomecánica.</li></ul></div>
+    </div>
+
+    <div id="bms" class="grid lg:grid-cols-2 gap-8 items-center">
+      <div><h2 class="text-2xl font-bold">BMS / IoT</h2><p class="mt-2 text-slate-700">Integración BACnet/Modbus, dashboards, alarmas, analítica y mantenimiento predictivo. Integramos <strong>COOL AUTOMATION</strong> para VRF y 1:1.</p>
+        <ul class="mt-3 list-disc ml-6 text-slate-700"><li>Sensores y gateways con conectividad.</li><li>APIs y telemetría para optimización continua.</li></ul></div>
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop" class="rounded-2xl shadow object-cover h-80 w-full" alt="IoT y BMS">
+    </div>
+
+    <div id="energia" class="grid lg:grid-cols-2 gap-8 items-center">
+      <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1600&auto=format&fit=crop" class="rounded-2xl shadow object-cover h-80 w-full" alt="Planta con paneles solares">
+      <div><h2 class="text-2xl font-bold">Ahorro de Energía & Energías Renovables</h2><p class="mt-2 text-slate-700">Auditorías, retrofits y generación renovable con foco en OPEX y emisiones, presentando ROI y payback.</p>
+        <ul class="mt-3 list-disc ml-6 text-slate-700"><li>Retrocomisionado y estrategias de control eficientes.</li><li>Dimensionamiento de solar y almacenamiento.</li></ul></div>
+    </div>
+
+    <div id="leed" class="grid lg:grid-cols-2 gap-8 items-center">
+      <div><h2 class="text-2xl font-bold">Descarbonización & Certificaciones LEED</h2><p class="mt-2 text-slate-700">Inventario de emisiones (Alcances 1,2,3), roadmap de reducción, Commissioning (Cx) y M&V. Miembros del Green Building Council.</p>
+        <ul class="mt-3 list-disc ml-6 text-slate-700"><li>Estrategias de IA para optimización de procesos y cómputos.</li><li>Preparación de documentación para créditos EA/IEQ.</li></ul></div>
+      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1600&auto=format&fit=crop" class="rounded-2xl shadow object-cover h-80 w-full" alt="LEED y descarbonización">
+    </div>
+
+    <div id="bim" class="grid lg:grid-cols-2 gap-8 items-center">
+      <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop" class="rounded-2xl shadow object-cover h-80 w-full" alt="REVIT BIM MEP">
+      <div><h2 class="text-2xl font-bold">BIM MEP</h2><p class="mt-2 text-slate-700">Modelado 3D, coordinación clash-free, cómputos precisos y auditoría de pliegos/licitaciones.</p>
+        <ul class="mt-3 list-disc ml-6 text-slate-700"><li>LOD por etapa, Navisworks, 4D/5D y prefabricación.</li><li>Revisión técnica y control de calidad documental.</li></ul></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="border-t border-slate-200 bg-white"><div class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4"><div class="flex items-center gap-3"><img src="/assets/isologo.png" class="h-9" alt="ARAUKO logo"><div class="hidden md:block text-sm"><div class="font-semibold">ARAUKO</div>HVAC 4.0 &amp; Smart Building Solutions</div></div><div id="cpy" class="text-sm text-slate-600"></div></div></footer>
+<a href="https://wa.me/5491144752218" target="_blank" class="fixed bottom-5 right-5 h-14 w-14 rounded-full shadow-lg bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center" aria-label="WhatsApp">✉️</a>
+<script>document.getElementById('cpy').textContent='© '+new Date().getFullYear()+' ARAUKO. Todos los derechos reservados.';const b=document.getElementById('burger'),d=document.getElementById('drawer');b&&b.addEventListener('click',()=>d.classList.toggle('hidden'));d&&d.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>d.classList.add('hidden')));</script>
+</body></html>
+
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casos de Éxito — ARAUKO</title>
+<meta name="description" content="Casos de éxito y proyectos de consultoría HVAC, BMS/IoT, BIM y energías renovables.">
+<link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/assets/isologo.png">
+<meta property="og:title" content="Casos de Éxito — ARAUKO"><meta property="og:description" content="Página dinámica ligada a LinkedIn/Notion vía news.json.">
+<script src="https://cdn.tailwindcss.com"></script>
+</head><body class="font-sans text-slate-900 bg-white">
+<header class="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 md:py-3 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-3"><img src="/assets/isologo.png" class="h-10 md:h-12"><div class="hidden lg:block leading-tight"><div class="font-bold text-slate-900 tracking-wide text-xl">ARAUKO</div><div class="text-[12px] text-slate-600">HVAC 4.0 & Smart Building Solutions</div></div></a>
+    <button id="burger" class="md:hidden h-10 w-10 rounded-lg border border-slate-300">☰</button>
+    <div id="menu" class="hidden md:flex items-center gap-6"><a href="/#empresa" class="text-sm">Nuestra Empresa</a><a href="/servicios/" class="text-sm">Servicios</a><a href="/casos/" class="text-sm">Casos de Éxito</a><a href="/contacto/" class="inline-flex items-center gap-2 rounded-full border border-emerald-300 bg-gradient-to-r from-sky-100 via-emerald-100 to-amber-100 px-4 py-2 text-sm font-semibold">Contacto</a></div>
+  </nav><div id="drawer" class="md:hidden hidden border-t border-slate-200 bg-white px-4 py-3"><div class="flex flex-col gap-3"><a href="/#empresa">Nuestra Empresa</a><a href="/servicios/">Servicios</a><a href="/casos/">Casos de Éxito</a><a href="/contacto/" class="font-semibold">Contacto</a></div></div>
+</header>
+
+<main class="pt-28 md:pt-24">
+<section class="section py-12">
+  <div class="max-w-7xl mx-auto px-6 text-center"><h1 class="text-3xl md:text-4xl font-extrabold">Casos de Éxito</h1><p class="text-slate-700 mt-3">Esta página se alimenta desde <code>/assets/news.json</code>.</p></div>
+  <div class="max-w-7xl mx-auto px-6 mt-10"><div id="newsGrid" class="grid md:grid-cols-3 gap-6"></div></div>
+</section>
+</main>
+
+<footer class="border-t border-slate-200 bg-white"><div class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4"><div class="flex items-center gap-3"><img src="/assets/isologo.png" class="h-9"><div class="hidden md:block text-sm"><div class="font-semibold">ARAUKO</div>HVAC 4.0 &amp; Smart Building Solutions</div></div><div id="cpy" class="text-sm text-slate-600"></div></div></footer>
+<a href="https://wa.me/5491144752218" target="_blank" class="fixed bottom-5 right-5 h-14 w-14 rounded-full shadow-lg bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center" aria-label="WhatsApp">✉️</a>
+
+<script>
+document.getElementById('cpy').textContent='© '+new Date().getFullYear()+' ARAUKO. Todos los derechos reservados.';
+const b=document.getElementById('burger'),d=document.getElementById('drawer');b&&b.addEventListener('click',()=>d.classList.toggle('hidden'));d&&d.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>d.classList.add('hidden')));
+(async()=>{
+  try{
+    const r=await fetch('/assets/news.json',{cache:'no-store'}); const items=await r.json();
+    const grid=document.getElementById('newsGrid');
+    grid.innerHTML=items.map(it=>`
+      <article class="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm">
+        <img src="${it.image}" class="h-44 w-full object-cover" alt="${it.title}">
+        <div class="p-5">
+          <div class="text-xs text-slate-500">${it.type} • ${new Date(it.date).toLocaleDateString('es-AR')}</div>
+          <h3 class="font-semibold mt-1">${it.title}</h3>
+          <p class="text-sm text-slate-700 mt-2">${it.summary}</p>
+          ${it.link?`<a class="inline-block mt-3 text-sm font-semibold text-emerald-700 hover:underline" href="${it.link}" target="_blank" rel="noopener">Ver más →</a>`:''}
+        </div>
+      </article>`).join('');
+  }catch(e){console.error(e);}
+})();
+</script>
+</body></html>
+
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto — ARAUKO</title>
+<meta name="description" content="Contactanos para proyectos HVAC, BMS/IoT, BIM MEP, LEED y energías renovables.">
+<link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/assets/isologo.png">
+<meta property="og:title" content="Contacto — ARAUKO"><meta property="og:description" content="Consultoría y propuestas técnicas a medida.">
+<script src="https://cdn.tailwindcss.com"></script>
+</head><body class="font-sans text-slate-900 bg-white">
+<header class="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 md:py-3 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-3"><img src="/assets/isologo.png" class="h-10 md:h-12"><div class="hidden lg:block leading-tight"><div class="font-bold text-slate-900 tracking-wide text-xl">ARAUKO</div><div class="text-[12px] text-slate-600">HVAC 4.0 & Smart Building Solutions</div></div></a>
+    <button id="burger" class="md:hidden h-10 w-10 rounded-lg border border-slate-300">☰</button>
+    <div id="menu" class="hidden md:flex items-center gap-6"><a href="/#empresa" class="text-sm">Nuestra Empresa</a><a href="/servicios/" class="text-sm">Servicios</a><a href="/casos/" class="text-sm">Casos de Éxito</a><a href="/contacto/" class="inline-flex items-center gap-2 rounded-full border border-emerald-300 bg-gradient-to-r from-sky-100 via-emerald-100 to-amber-100 px-4 py-2 text-sm font-semibold">Contacto</a></div>
+  </nav><div id="drawer" class="md:hidden hidden border-t border-slate-200 bg-white px-4 py-3"><div class="flex flex-col gap-3"><a href="/#empresa">Nuestra Empresa</a><a href="/servicios/">Servicios</a><a href="/casos/">Casos de Éxito</a><a href="/contacto/" class="font-semibold">Contacto</a></div></div>
+</header>
+
+<main class="pt-28 md:pt-24">
+<section class="section py-12">
+  <div class="max-w-7xl mx-auto px-6 text-center"><h1 class="text-3xl md:text-4xl font-extrabold">Contacto</h1><p class="text-slate-700 mt-3">Dejanos tus datos y te enviamos una propuesta.</p></div>
+  <div class="max-w-7xl mx-auto px-6 mt-10 grid md:grid-cols-2 gap-8">
+    <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias.html" class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm space-y-4">
+      <input type="hidden" name="form-name" value="contacto">
+      <p class="hidden"><label>No completar: <input name="bot-field"></label></p>
+      <div><label class="text-sm font-medium">Nombre *</label><input name="nombre" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2"/></div>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div><label class="text-sm font-medium">Email *</label><input type="email" name="email" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2"/></div>
+        <div><label class="text-sm font-medium">Teléfono</label><input name="telefono" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2"/></div>
+      </div>
+      <div><label class="text-sm font-medium">Empresa</label><input name="empresa" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2"/></div>
+      <div><label class="text-sm font-medium">Mensaje *</label><textarea name="mensaje" rows="4" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2"></textarea></div>
+      <button type="submit" class="inline-flex items-center gap-2 rounded-xl px-5 py-3 bg-slate-900 text-white shadow hover:shadow-md">Enviar</button>
+    </form>
+    <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h3 class="font-semibold">Datos de contacto</h3>
+      <ul class="mt-4 space-y-3 text-slate-700"><li>📞 +54 9 11 4475 2218</li><li>✉️ info@arauko.com</li><li>📍 Buenos Aires, Argentina</li></ul>
+      <div class="mt-6 p-4 rounded-xl bg-gradient-to-r from-sky-50 via-emerald-50 to-amber-50 border border-slate-200">
+        ¿Preferís WhatsApp? <br><a class="font-semibold underline" href="https://wa.me/5491144752218" target="_blank" rel="noopener">Escribinos por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="border-t border-slate-200 bg-white"><div class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4"><div class="flex items-center gap-3"><img src="/assets/isologo.png" class="h-9"><div class="hidden md:block text-sm"><div class="font-semibold">ARAUKO</div>HVAC 4.0 &amp; Smart Building Solutions</div></div><div id="cpy" class="text-sm text-slate-600"></div></div></footer>
+<a href="https://wa.me/5491144752218" target="_blank" class="fixed bottom-5 right-5 h-14 w-14 rounded-full shadow-lg bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center" aria-label="WhatsApp">✉️</a>
+<script>document.getElementById('cpy').textContent='© '+new Date().getFullYear()+' ARAUKO. Todos los derechos reservados.';const b=document.getElementById('burger'),d=document.getElementById('drawer');b&&b.addEventListener('click',()=>d.classList.toggle('hidden'));d&&d.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>d.classList.add('hidden')));</script>
+</body></html>
+
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gracias — ARAUKO</title><link rel="icon" href="/favicon.ico">
+<script src="https://cdn.tailwindcss.com"></script></head>
+<body class="min-h-screen bg-slate-50 flex items-center justify-center">
+  <div class="max-w-lg mx-auto text-center p-8 bg-white rounded-2xl shadow">
+    <img src="/assets/logo-arauko.png" class="h-12 mx-auto mb-4" alt="ARAUKO">
+    <h1 class="text-2xl font-bold text-slate-900">¡Gracias por contactarte!</h1>
+    <p class="text-slate-700 mt-3">Recibimos tu consulta correctamente. Te responderemos a la brevedad.</p>
+    <a href="/" class="inline-block mt-6 px-5 py-3 rounded-xl bg-slate-900 text-white">Volver al inicio</a>
+  </div>
+</body></html>
+
+[
+  {
+    "type": "Caso",
+    "title": "Cadena retail — Retrofit HVAC y BMS",
+    "summary": "-18% consumo anual; VRF + recuperación de calor y control por horarios/ocupación.",
+    "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9a?q=80&w=1200&auto=format&fit=crop",
+    "date": "2025-07-28",
+    "link": "#"
+  },
+  {
+    "type": "Integración",
+    "title": "BMS + IoT en oficinas AAA",
+    "summary": "Monitoreo IAQ y energía con dashboards; alarmas proactivas y mantenimiento predictivo.",
+    "image": "https://images.unsplash.com/photo-1581091215367-59ab6be3dda3?q=80&w=1200&auto=format&fit=crop",
+    "date": "2025-07-10",
+    "link": "#"
+  },
+  {
+    "type": "BIM",
+    "title": "BIM MEP clash-free en edificio comercial",
+    "summary": "Coordinación en Navisworks, prefabricación de ductos, -15% plazo de obra.",
+    "image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop",
+    "date": "2025-06-25",
+    "link": "#"
+  }
+]
+
+User-agent: *
+Allow: /
+Sitemap: https://arauko.com/sitemap.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://arauko.com/</loc></url>
+  <url><loc>https://arauko.com/servicios/</loc></url>
+  <url><loc>https://arauko.com/casos/</loc></url>
+  <url><loc>https://arauko.com/contacto/</loc></url>
+</urlset>
+
+/
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+/assets/*
+  Cache-Control: public, max-age=604800
+
